@@ -1,4 +1,5 @@
 FROM golang:1.15-alpine AS build
+EXPOSE 8000
 WORKDIR /src
 COPY go.mod .
 RUN go mod download
